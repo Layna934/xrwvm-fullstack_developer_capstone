@@ -1,51 +1,67 @@
 img{
-  width: 60%;
+  width: 70%;
+  max-width: 180px;
   align-self: center;
+  margin-top: 15px;
 }
 
 .card{
-  border: rgb(103, 102, 105) 3px solid;
-  display: flex;  
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  display: flex;
   flex-direction: column;
-  margin-left:5%;
-  margin-right:5%;
+  margin-left: 1%;
+  margin-right: 1%;
   margin-top: 1%;
   margin-bottom: 1%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  background-color: white;
+}
+
+.card:hover{
+  transform: translateY(-5px);
 }
 
 .row{
-  display: flex;  
+  display: flex;
   flex: 1;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: auto;
   margin-top: 1%;
   justify-content: center;
-  padding:20px;
+  padding: 20px;
+  gap: 20px;
 }
 
 .container{
   justify-content: center;
 }
+
 .details{
-  font-size: 20px;
-  color: rgb(97, 64, 128);
-  padding:20px;
+  font-size: 18px;
+  color: #555;
+  padding: 20px;
+  text-align: center;
 }
 
 .title{
-  font-size: 20px;
-  background-color: rgb(97, 64, 128);
+  font-size: 22px;
+  background-color: #0d6efd;
   color: white;
   text-align: center;
-  margin:20px;
-  padding:5px;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 600;
 }
 
 .homepage_links{
-  color:  rgb(97, 64, 128);
+  color: #0d6efd;
   padding: 25%;
   font-size: larger;
-  }
+}
 
 .loginlink{
   display: flex;
@@ -58,21 +74,31 @@ img{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex:1
+  flex: 1;
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  border-radius: 12px;
+}
+
+.banner h1{
+  margin-bottom: 20px;
+  color: #0d6efd;
+  font-weight: bold;
 }
 
 .form_panel {
-  padding:2%;
+  padding: 2%;
   display: flex;
   flex-direction: column;
-  border-radius: 50px;
-  text-align:center;
-  box-shadow: 2px 2px 2px 3px #999;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   margin: auto;
   min-width: 350px;
   width: 80%;
-  margin-top:3%;
-  background-color: black;
+  margin-top: 3%;
+  background-color: white;
 }
 
 .navitems{
@@ -81,21 +107,20 @@ img{
   padding: 20px;
   flex: 1;
   justify-content: flex-start;
-  justify-self: center;
 }
 
 .nav_item{
-  margin-left:15px;
+  margin-left: 15px;
   font-size: 20px;
   color: black;
   align-self: center;
+  font-weight: 500;
 }
 
 .username{
   font: 30px sans-serif;
-  color:black;
-  justify-content: 'flex-end';
-  align-self:flex-end;
+  color: black;
+  align-self: flex-end;
   vertical-align: middle;
 }
 
@@ -104,23 +129,24 @@ img{
   flex-direction: row;
   padding: 20px;
   flex: 1;
-  justify-content:flex-end;
+  justify-content: flex-end;
   align-items: flex-end;
   vertical-align: middle;
 }
 
 .small_header{
   font: 30px sans-serif;
-  color:black;
+  color: black;
   margin: .5cm;
+  font-weight: bold;
 }
 
 .img_icon {
   align-self: center;
-    width:40px;
-    background-color:#0C9;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    box-shadow: 2px 2px 3px #999;  
+  width: 40px;
+  background-color: #0d6efd;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
 }
