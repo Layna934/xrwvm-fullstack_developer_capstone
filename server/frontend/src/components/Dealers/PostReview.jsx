@@ -17,8 +17,9 @@ const PostReview = () => {
   let root_url = curr_url.substring(0,curr_url.indexOf("postreview"));
   let params = useParams();
   let id =params.id;
+//   let root_url = window.location.origin + "/"
   let dealer_url = root_url+`djangoapp/dealer/${id}`;
-  let review_url = root_url+`djangoapp/add_review`;
+  let review_url = root_url+`djangoapp/add_review/`;
   let carmodels_url = root_url+`djangoapp/get_cars`;
 
   const postreview = async ()=>{
@@ -57,8 +58,9 @@ const PostReview = () => {
   });
 
   const json = await res.json();
-  if (json.status === 200) {
-      window.location.href = window.location.origin+"/dealer/"+id;
+  console.log("POST response:", json);
+  if (json.status === 200 ) {
+      window.location.href = window.location.origin + "/dealer/" + id;
   }
 
   }
