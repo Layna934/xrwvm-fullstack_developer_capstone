@@ -70,8 +70,7 @@ def get_cars(request):
 @csrf_exempt
 def registration(request):
     # context = {}
-	
-	# Load JSON data from the request body
+    # Load JSON data from the request body
     data = json.loads(request.body)
     username = data['userName']
     password = data['password']
